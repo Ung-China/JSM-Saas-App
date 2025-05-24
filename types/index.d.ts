@@ -65,7 +65,6 @@ interface Avatar {
   className?: string;
 }
 
-
 interface SavedMessage {
   role: "user" | "system" | "assistant";
   content: string;
@@ -80,4 +79,20 @@ interface CompanionComponentProps {
   userImage: string;
   voice: string;
   style: string;
+}
+
+interface CompanionCardProps {
+  id: string;
+  name: string;
+  topic: string;
+  subject: string;
+  duration: number;
+  color: string;
+  bookmarked: boolean;
+}
+
+interface CompanionsListProps {
+  title: string;
+  companions?: Companion[];
+  classNames?: string;
 }
